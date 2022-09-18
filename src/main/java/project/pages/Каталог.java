@@ -3,6 +3,7 @@ package project.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import project.Base;
@@ -10,12 +11,12 @@ import project.Base;
 public class Каталог extends LuxoftHeader<Каталог> {
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());
-    private SelenideElement комплексные_программы =
+    private WebElement комплексные_программы =
             Base.driver.findElement(By.xpath("//ul[@class='addition-menu']/li[2]/a"));
 
     @Override
     protected void chooseTab() {
-        SelenideElement каталог =
+        WebElement каталог =
                 Base.driver.findElement(By.xpath("//a[text()='Каталог']"));
         каталог.click();
     }
@@ -24,7 +25,7 @@ public class Каталог extends LuxoftHeader<Каталог> {
      * Метод предназначен для перехода на вкладку "Направлние"
      */
     public Направление нажать_направление() {
-        SelenideElement направление =
+        WebElement направление =
                 Base.driver.findElement(By.xpath("//li[@class='active']//a"));
         направление.click();
         return new Направление();

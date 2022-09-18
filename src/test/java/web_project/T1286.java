@@ -5,8 +5,7 @@ import project.pages.Контакты;
 
 import java.util.Arrays;
 
-import static automationTesting.allureReport.Steps.result;
-import static automationTesting.allureReport.Steps.step;
+import static io.qameta.allure.Allure.step;
 
 public class T1286 {
     private MainPage mainPage;
@@ -21,20 +20,19 @@ public class T1286 {
             mainPage = new MainPage();
             контакты = mainPage.userGoToPageContacts();
 
-            result("1. Открыта правая всплывающая панель. " +
-                    "2. Открыто окно 'Контакты'");
+
         });
 
         step("[Step 3]: Проверить, что отображаются кнопки: '" + города + "'", () -> {
             контакты.checkButtonCities(Arrays.asList(города));
 
-            result("Отображаются кнопки: '" + города + "'");
+
         });
 
         step("[Step 4]: Проверить, что не отображается кнопка: 'Екатеринбург'", () -> {
             контакты.checkButtonCityNotSee("Екатеринбург");
 
-            result("Не отображается кнопка: 'Екатеринбург'");
+
         });
     }
 }

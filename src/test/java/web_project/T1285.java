@@ -1,6 +1,5 @@
 package web_project;
 
-import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import project.pages.MainPage;
@@ -8,8 +7,8 @@ import project.pages.Расписание_и_цены;
 
 import java.util.Arrays;
 
-import static automationTesting.allureReport.Steps.result;
-import static automationTesting.allureReport.Steps.step;
+
+import static io.qameta.allure.Allure.step;
 import static project.pages.MainPage.Вкладки.Расписание;
 
 
@@ -27,13 +26,13 @@ public class T1285 {
                     .userGoToPage(Расписание)
                     .return_to_page(new Расписание_и_цены());
 
-            result("Перешли на вкладку «Расписание»");
+
         });
 
         step("[Step 2]: Проверить отображение кнопок 'Расписание', 'Бесплатные семинары' и 'Онлайн-курсы'", () -> {
             расписание_и_цены.check_buttons_exist(Arrays.asList(кнопи));
 
-            result("Кнопки 'Расписание', 'Бесплатные семинары' и 'Онлайн-курсы' отображены на странице");
+
         });
     }
 }
