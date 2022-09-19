@@ -11,7 +11,7 @@ public class T1286 {
     private MainPage mainPage;
     private Контакты контакты;
 
-    String[] города = {"Москва", "Санкт-Петербург", "Омск", "Днепр", "Одесса", "Киев"};
+    String[] города = {"Москва", "Санкт-Петербург", "Омск"};
 
     public void scenario_T1286() {
 
@@ -30,7 +30,7 @@ public class T1286 {
         });
 
         step("[Step 4]: Проверить, что не отображается кнопка: 'Екатеринбург'", () -> {
-            контакты.checkButtonCityNotSee("Екатеринбург");
+            контакты.checkButtonCityNotSee("Москва");
 
 
         });

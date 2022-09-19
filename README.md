@@ -1,19 +1,5 @@
-# Проект основан на Java
-
-Чтобы запустить тест кейсы требуется поставить:
-
-File -> Projects Structure -> выбрать 8 Java
-
-Перейти в папку и запустить:
-
-test -> resources -> suites -> Suite1_Web_1.
-
-
-### Состав:
-
-* main -> java -> project -> pages - в данной папке хранятся описанные страницы;
-
-* класс `Base` - описывает открытие страницы;
+#Jenkins project
+Gradle_selenium_allure_jenkins
 
 
 
