@@ -1,5 +1,6 @@
 package suites;
 
+import io.qameta.allure.Owner;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Order;
@@ -12,6 +13,7 @@ import web_project.T1288;
 public class Suite1_Web_1 {
 
     @Test
+    @Owner("Oshurkov Nikta")
     @Order(1)
     @DisplayName("SADDTU-T1285 (1.0): Пользователь переходит на вкладку «Расписание»")
 
@@ -21,6 +23,7 @@ public class Suite1_Web_1 {
     }
 
     @Test
+    @Owner("Oshurkov Nikta")
     @Order(2)
     @DisplayName("SADDTU-T1286 (1.0): Пользователь переходит на вкладку «Контакты»")
 
