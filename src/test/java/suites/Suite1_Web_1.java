@@ -13,7 +13,7 @@ import web_project.T1288;
 public class Suite1_Web_1 {
 
     @Test
-    @Owner("Oshurkov Nikta")
+    @Owner("Oshurkov Nikita")
     @Order(1)
     @DisplayName("SADDTU-T1285 (1.0): Пользователь переходит на вкладку «Расписание»")
 
@@ -23,7 +23,7 @@ public class Suite1_Web_1 {
     }
 
     @Test
-    @Owner("Oshurkov Nikta")
+    @Owner("Oshurkov Nikita")
     @Order(2)
     @DisplayName("SADDTU-T1286 (1.0): Пользователь переходит на вкладку «Контакты»")
 
